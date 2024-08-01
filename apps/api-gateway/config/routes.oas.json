@@ -17,7 +17,7 @@
                     "policies": {
                         "inbound": [
                             "set-headers-inbound",
-                            "rate-limit-inbound"
+                            "hmac-signing-inbound"
                         ]
                     }
                 },

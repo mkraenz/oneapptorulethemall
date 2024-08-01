@@ -29,6 +29,30 @@
       },
       "name": "rate-limit-inbound",
       "policyType": "rate-limit-inbound"
+    },
+    {
+      "handler": {
+        "export": "ApiKeyInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "allowUnauthenticatedRequests": false,
+          "cacheTtlSeconds": 60
+        }
+      },
+      "name": "api-key-inbound",
+      "policyType": "api-key-inbound"
+    },
+    {
+      "handler": {
+        "export": "default",
+        "module": "$import(./modules/hmac-signing-inbound)",
+        "options": {
+          "secret": "$env(APIGW_SECRET)",
+          "headerName": "X-HMAC-Signature"
+        }
+      },
+      "name": "hmac-signing-inbound",
+      "policyType": "custom-code-inbound"
     }
   ]
 }

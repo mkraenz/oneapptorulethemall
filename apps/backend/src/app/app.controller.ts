@@ -35,7 +35,7 @@ export class AppController {
       },
     },
     policies: {
-      inbound: ['set-headers-inbound', 'rate-limit-inbound'],
+      inbound: ['set-headers-inbound', 'hmac-signing-inbound'],
     },
   })
   @ApiExtension('x-internal', true)
