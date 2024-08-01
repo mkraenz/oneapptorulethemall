@@ -11,7 +11,7 @@
                         "export": "urlForwardHandler",
                         "module": "$import(@zuplo/runtime)",
                         "options": {
-                            "baseUrl": "https://webhook.site/cba800af-837e-4c86-9627-b1bead7db11b"
+                            "baseUrl": "${env.BASE_URL}"
                         }
                     },
                     "policies": {
@@ -46,7 +46,7 @@
                         "export": "urlForwardHandler",
                         "module": "$import(@zuplo/runtime)",
                         "options": {
-                            "baseUrl": "https://webhook.site/cba800af-837e-4c86-9627-b1bead7db11b"
+                            "baseUrl": "${env.BASE_URL}"
                         }
                     },
                     "policies": {
