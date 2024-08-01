@@ -1,4 +1,6 @@
-# My API
+# OneAppToRuleThemAll
+
+This is _obviously_ a LOTR reference. If you are not a fan, you are missing out. Get real, dude!
 
 You can write full markdown in these documents. Syntax highlighting and full
 Github Flavored markdown are supported. To learn more about customizing the
@@ -6,9 +8,9 @@ documentation of this developer portal
 [see the documentation](https://zuplo.com/docs/developer-portal/adding-pages).
 
 ```ts
-const response = await fetch("https://echo.zuplo.io", {
+const response = await fetch('https://echo.zuplo.io', {
   headers: {
-    "content-type": "application/json",
+    'content-type': 'application/json',
   },
 });
 

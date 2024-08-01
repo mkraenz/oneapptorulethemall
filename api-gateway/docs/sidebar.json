@@ -6,6 +6,16 @@
       "label": "Index"
     },
     {
+      "type": "doc",
+      "id": "asecondpage",
+      "label": "Other"
+    },
+    {
+      "type": "doc",
+      "id": "sub/nestedpage",
+      "label": "Nested"
+    },
+    {
       "type": "api-ref",
       "label": "API Reference"
     }
