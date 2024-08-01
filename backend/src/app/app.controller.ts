@@ -21,9 +21,7 @@ export class AppController {
     handler: {
       export: 'urlForwardHandler',
       module: '$import(@zuplo/runtime)',
-      options: {
-        baseUrl: 'https://echo.zuplo.io',
-      },
+      options: {},
     },
     policies: {
       inbound: ['set-headers-inbound'],

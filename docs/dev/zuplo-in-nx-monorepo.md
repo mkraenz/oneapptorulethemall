@@ -71,3 +71,7 @@ packages:
   - 'backend-e2e'
   - '!api-gateway'
 ```
+
+## Ressources
+
+- <https://zuplo.com/docs/articles/custom-ci-cd#you-have-multiple-sub-folders-in-your-repository>

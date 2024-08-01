@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "zup dev",
     "test": "zup test",
-    "deploy": "zup deploy --apiKey $ZUPLO_API_KEY"
+    "deploy": "zup deploy --apiKey $ZUPLO_API_KEY --no-verify-remote"
   },
   "dependencies": {
     "zuplo": "latest"
