@@ -1,0 +1,21 @@
+{
+  "policies": [
+    {
+      "handler": {
+        "export": "SetHeadersInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "headers": [
+            {
+              "name": "x-apigw-key",
+              "value": "$env(APIGW_KEY)",
+              "overwrite": true
+            }
+          ]
+        }
+      },
+      "name": "set-headers-inbound",
+      "policyType": "set-headers-inbound"
+    }
+  ]
+}

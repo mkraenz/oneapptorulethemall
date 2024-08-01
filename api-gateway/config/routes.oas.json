@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/api": {
+            "get": {
+                "operationId": "AppController_getData",
+                "x-internal": true,
+                "x-zuplo-route": {
+                    "corsPolicy": "none",
+                    "handler": {
+                        "export": "urlForwardHandler",
+                        "module": "$import(@zuplo/runtime)",
+                        "options": {
+                            "baseUrl": "https://echo.zuplo.io"
+                        }
+                    },
+                    "policies": {
+                        "inbound": [
+                            "set-headers-inbound"
+                        ]
+                    }
+                },
+                "summary": "Say hi",
+                "description": "This is a simple endpoint that returns a greeting message.",
+                "parameters": [],
+                "responses": {
+                    "default": {
+                        "description": "Greeting message",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "title": "OneAppToRuleThemAll API",
+        "description": "Documentation for the OneAppToRuleThemAll API",
+        "version": "0.0.1",
+        "contact": {}
+    },
+    "tags": [],
+    "servers": [],
+    "components": {
+        "schemas": {}
+    }
+}

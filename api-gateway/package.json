@@ -1,0 +1,14 @@
+{
+  "name": "oneapptorulethemall",
+  "version": "1.0.0",
+  "author": "",
+  "copyright": "",
+  "scripts": {
+    "dev": "zup dev",
+    "test": "zup test",
+    "deploy": "zup deploy --apiKey $ZUPLO_API_KEY"
+  },
+  "dependencies": {
+    "zuplo": "latest"
+  }
+}
