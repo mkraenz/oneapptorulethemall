@@ -21,6 +21,13 @@
           "buildTarget": "backend:build:production"
         }
       }
+    },
+    "generate-openapi": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "command": "RUN_MODE='generate-docs' node dist/backend/main.js"
+      }
     }
   }
 }

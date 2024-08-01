@@ -42,7 +42,7 @@ const runApp = async ({
       const filepath = '../gen/backend/openapi.json';
       const outputPath = path.resolve(__dirname, filepath);
       mkdirSync(path.dirname(outputPath), { recursive: true });
-      writeFileSync(outputPath, JSON.stringify(openapiDocs), {
+      writeFileSync(outputPath, JSON.stringify(openapiDocs, null, 4), {
         encoding: 'utf8',
       });
       Logger.log(`OpenAPI schema written to ${outputPath}`);
