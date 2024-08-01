@@ -10,7 +10,9 @@
                     "handler": {
                         "export": "urlForwardHandler",
                         "module": "$import(@zuplo/runtime)",
-                        "options": {}
+                        "options": {
+                            "baseUrl": "https://webhook.site/cba800af-837e-4c86-9627-b1bead7db11b"
+                        }
                     },
                     "policies": {
                         "inbound": [
