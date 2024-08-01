@@ -11,11 +11,11 @@
         "cwd": "apps/api-gateway"
       }
     },
-    "generate-openapi": {
+    "copy-openapi": {
       "executor": "nx:run-commands",
-      "dependsOn": ["build"],
+      "dependsOn": ["backend:generate-openapi"],
       "options": {
-        "command": "RUN_MODE='generate-docs' node dist/backend/main.js"
+        "command": "cp ./dist/gen/backend/openapi.json ./apps/api-gateway/config/routes.oas.json"
       }
     }
   }
