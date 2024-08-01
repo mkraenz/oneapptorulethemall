@@ -16,7 +16,8 @@
                     },
                     "policies": {
                         "inbound": [
-                            "set-headers-inbound"
+                            "set-headers-inbound",
+                            "rate-limit-inbound"
                         ]
                     }
                 },

@@ -16,6 +16,19 @@
       },
       "name": "set-headers-inbound",
       "policyType": "set-headers-inbound"
+    },
+    {
+      "handler": {
+        "export": "RateLimitInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "rateLimitBy": "ip",
+          "requestsAllowed": 2,
+          "timeWindowMinutes": 1
+        }
+      },
+      "name": "rate-limit-inbound",
+      "policyType": "rate-limit-inbound"
     }
   ]
 }

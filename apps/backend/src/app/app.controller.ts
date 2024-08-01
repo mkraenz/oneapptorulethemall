@@ -35,7 +35,7 @@ export class AppController {
       },
     },
     policies: {
-      inbound: ['set-headers-inbound'],
+      inbound: ['set-headers-inbound', 'rate-limit-inbound'],
     },
   })
   @ApiExtension('x-internal', true)

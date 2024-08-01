@@ -2,6 +2,8 @@
 
 This is _obviously_ a LOTR reference. If you are not a fan, you are missing out. Get real, dude!
 
+Also Twitch chat is awesome. Btw, my cat uses Arch.
+
 You can write full markdown in these documents. Syntax highlighting and full
 Github Flavored markdown are supported. To learn more about customizing the
 documentation of this developer portal

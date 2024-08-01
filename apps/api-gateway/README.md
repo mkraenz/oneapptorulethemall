@@ -25,3 +25,15 @@ curl --request POST \
 }
 '
 ```
+
+## Overview of Zuplo features
+
+Users (public internet) -> API GW -> backend servers
+
+zuplo API GW
+
+- universal entry point to your APIS
+- authentication offloading
+- rate limiting
+- hosted docs + openapi spec rendered
+- api key management (for authentication) (e.g. like github personal access tokens)
