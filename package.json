@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "copy-openapi-to-api-gateway": "cp ./dist/gen/backend/openapi.json ./api-gateway/config/routes.oas.json",
+    "copy-openapi-to-api-gateway": "cp ./dist/gen/backend/openapi.json ./apps/api-gateway/config/routes.oas.json",
     "generate-random-string": "openssl rand -base64 256 | tr -d '\n'"
   },
   "private": true,

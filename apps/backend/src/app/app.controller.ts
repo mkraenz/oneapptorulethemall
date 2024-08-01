@@ -31,7 +31,7 @@ export class AppController {
       export: 'urlForwardHandler',
       module: '$import(@zuplo/runtime)',
       options: {
-        baseUrl: process.env.BASE_URL,
+        baseUrl: '${env.BASE_URL}',
       },
     },
     policies: {
@@ -55,7 +55,7 @@ export class AppController {
       export: 'urlForwardHandler',
       module: '$import(@zuplo/runtime)',
       options: {
-        baseUrl: process.env.BASE_URL,
+        baseUrl: '${env.BASE_URL}',
       },
     },
     policies: {

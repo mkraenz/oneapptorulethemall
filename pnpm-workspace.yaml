@@ -1,4 +1,3 @@
 packages:
-  - 'backend'
-  - 'backend-e2e'
-  - '!api-gateway'
+  - 'packages/*'
+  - '!packages/api-gateway'

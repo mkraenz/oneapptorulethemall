@@ -15,23 +15,23 @@
         "--debug-port",
         "9229",
         "--port",
-        "9000",
+        "9000"
       ],
       "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
+      "internalConsoleOptions": "neverOpen"
     },
     {
       "name": "Zuplo Gateway",
       "type": "node",
       "request": "attach",
       "restart": true,
-      "port": 9229,
-    },
+      "port": 9229
+    }
   ],
   "compounds": [
     {
       "name": "Launch & Attach Zuplo",
-      "configurations": ["Launch Zuplo", "Zuplo Gateway"],
-    },
-  ],
+      "configurations": ["Launch Zuplo", "Zuplo Gateway"]
+    }
+  ]
 }
